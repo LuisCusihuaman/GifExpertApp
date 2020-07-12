@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp = () => {
-	const [categories, setCategories] = useState([
-		"One Punch",
-		"Samurai X",
-		"Dragon Ball",
-	]);
+	const [categories, setCategories] = useState(["One Punch"]);
 	//Esto lo que hace cuando termina setCargories es setearlo a undefined porque setea el estado a lo que devuelve la funcion
 	// const handleAdd = () => {
 	// setCategories((categories) => {
@@ -26,7 +23,7 @@ export const GifExpertApp = () => {
 			{/* <button onClick={handleAdd}>Agregar One Piece</button> */}
 			<ol>
 				{categories.map((category) => (
-					<li key={category}>{category}</li>
+					<GifGrid key={category} category={category} />
 				))}
 			</ol>
 		</>
