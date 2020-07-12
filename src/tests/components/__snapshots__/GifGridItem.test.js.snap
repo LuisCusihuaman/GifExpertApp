@@ -13,17 +13,3 @@ exports[`Pruebas en <GifGridItem/> debe mostrar <GifGridItem /> correctamente  1
   </p>
 </div>
 `;
-
-exports[`Pruebas en <GifGridItem/> debe mostrar correctamente <GifGridItem /> correctamente  1`] = `
-<div
-  className="card animate__animated animate__fadeIn"
->
-  <img
-    alt="Un titulo"
-    src="https://localhost/algo,jpg"
-  />
-  <p>
-    Un titulo
-  </p>
-</div>
-`;
